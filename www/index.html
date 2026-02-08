@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <title>Zürich Hunters – Dodgeball Team</title>
+        <link rel="icon" href="img/logo.png" type="image/x-icon" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    </head>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+    <body>
+        <header>
+            <img src="img/logo.png" alt="Zürich Hunters Logo" class="logo">
+
+            <button class="hamburger" id="hamburger">☰</button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">Über uns</a>
+                <a href="#training">Training</a>
+                <a href="#games">Turnier</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+
+            <a href="#contact" class="header-button">Mitmachen</a>
+        </header>
+
+        <main id="home">
+
+            <div class="logo-section">
+                <img src="img/logo.png" class="large-logo" alt="">
+                <img src="img/lion.svg" class="lion-svg" alt="">
+            </div>
+
+            <section class="banner">
+                <h1>Zürich Hunters</h1>
+                <p>Dodgeball mit Biss</p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Jetzt Mitmachen</a>
+                    <a href="#about" class="btn btn-secondary" data-sidebar="about">Über uns</a>
+                </div>
+            </section>
+
+            <section class="two-column-banner">
+                <div class="banner-column">
+                    <img src="img/flag.png" class="banner-icon" alt="">
+                    <h3>Komm in unser Team!</h3>
+                    <p>Motivierte Spieler gesucht – Anfänger willkommen.</p>
+                </div>
+
+                <div class="banner-column">
+                    <img src="img/ball.png" class="banner-icon" alt="">
+                    <h3>Let's play Dodgeball!</h3>
+                    <p>Action, Teamgeist & Adrenalin.</p>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <div class="about-content">
+                    <h2>Über uns</h2>
+                    <p>
+                        Wir sind die Zürich Hunters, das Dodgeball Team aus deiner Stadt Zürich. Leidenschaft, Teamgeist und Action stehen bei uns im Mittelpunkt. Werde Teil des Zürich Hunters Rudels.
+                    </p>
+
+                    <h3>Unsere Geschichte</h3>
+                    <p>
+                        Gegründet mit der Vision, Dodgeball in Zürich populärer zu machen, wachsen wir stetig als Community.
+                    </p>
+
+                    <h3>Unsere Werte</h3>
+                    <ul>
+                        <li>Teamgeist & Zusammenhalt</li>
+                        <li>Leidenschaft für den Sport</li>
+                        <li>Respekt & Fairplay</li>
+                        <li>Spass am Spiel</li>
+                    </ul>
+                </div>
+
+                <div class="about-images">
+                    <img src="img/sample.jpg" class="about-img" alt="">
+                    <img src="img/sample.jpg" class="about-img" alt="">
+                </div>
+            </section>
+
+            <section id="training" class="two-column-banner">
+                <div class="banner-column">
+                    <h2>Training</h2>
+                    <div>
+                        <h3>Trainingszeiten</h3>
+                        <p><strong>Mittwoch:</strong> 18:00 - 19:30 Uhr</p>
+                        <h3>Dübendorf</h3>
+                        <p>Three Point Halle, unten</p>
+                        <h3>Auch für Newbies!</h3>
+                        <p>Alle Anfänger sind willkommen! Wir bieten kostenlose Einführungstrainings an. Bringt einfach Sportkleidung, eine Trinkflasche und gute Laune mit! </p>
+                        <a href="#contact" class="btn btn-primary">Jetzt Mitmachen</a>
+                    </div>
+                </div>
+
+                <div class="banner-column">
+                    <h2>Trainingsort</h2>
+                    <div id="map"></div>
+                </div>
+            </section>
+
+            <section id="games" class="page-section">
+                <h2>Schweizermeisterschaft</h2>
+                <iframe src="https://www.tournify.fr/live/swisschampionship25-26/standings" width="100%" height="1200" style="border:none; padding-bottom: 30px;"> </iframe>
+
+                <h2>Weitere Turniere</h2>
+                <p></p>
+                <h3>April 2026: </h3>
+                <p> Sharks Open </p>
+                <p></p>
+                <h3> Juni 2026: </h3>
+                <p> Central European Championship (CEC) </p>
+                <p></p>
+                <h3> Dezember 2026:</h3>
+                <p>World Championship Bangkok </p>
+            </section>
+
+            <section id="pics" class="page-section">
+                <h2>Fotos</h2>
+                <div class="about-images">
+                    <img src="img/sample.jpg" class="about-img" alt="">
+                    <img src="img/sample.jpg" class="about-img" alt="">
+                    <img src="img/sample.jpg" class="about-img" alt="">
+                    <img src="img/sample.jpg" class="about-img" alt="">
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="contact-content">
+                    <h2>Kontakt</h2>
+                    <p>
+                        Du möchtest mit uns in Kontakt treten?
+                        Schreib uns per Mail oder folge uns auf Social Media.
+                    </p>
+                    <p>Instagram: zurich hunters</p>
+                    <p>Email: zurichhunters@gmx.ch</p>
+                    <a href="mailto:zuerichhunters@gmx.ch">Sende direkt eine Email</a>
+                </div>
+
+                <div class="contact-images">
+                    <img src="img/instagram.jpg" class="contact-img" alt="">
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

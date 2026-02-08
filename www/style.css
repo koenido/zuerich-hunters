@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #E7E4D9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+
+/* Header Styles */
+
+header {
+    height: 60px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 15px 15px rgba(0, 0, 0, 0.63);
+    background-color: #040710;
+    z-index: 1100;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    margin-left: 40px;
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-top: 10px;
+}
+
+header a:hover {
+    color: rgb(255, 184, 82);
+}
+
+.header-button {
+    margin: 10px 20px 0px 0px;
+    padding: 10px 20px;
+    background-color: rgb(96, 17, 10);
+    color: rgb(229, 209, 179);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.header-button:hover {
+    background-color: rgb(255, 184, 82);
+    color: rgb(96, 17, 10);
+}
+
+
+/* Banner Section */
+
+.banner {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: transparent;
+    min-height: 400px;
+}
+
+.banner h1 {
+    font-size: 56px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner p {
+    font-size: 32px;
+    color: rgb(255, 184, 82);
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Button Styles */
+
+.btn {
+    padding: 14px 32px;
+    font-size: 14px;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: rgb(255, 184, 82);
+    color: rgb(96, 17, 10);
+    border-color: rgb(255, 184, 82);
+    width: auto;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: rgb(255, 184, 82);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: rgb(229, 209, 179);
+    border-color: rgb(229, 209, 179);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(229, 209, 179);
+    color: rgb(96, 17, 10);
+}
+
+
+/* Main Content */
+
+main {
+    padding: 40px 20px;
+    padding-top: 100px;
+}
+
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+section h2 {
+    color: rgb(255, 184, 82);
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+section h3 {
+    margin: 10px 0px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+ul {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin: 4px 0px;
+}
+
+
+/* Logo Section between header and banner */
+
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 0 60px;
+    gap: 40px;
+}
+
+.large-logo {
+    width: 250px;
+    height: auto;
+}
+
+.lion-svg {
+    width: 380px;
+    height: auto;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.95;
+}
+
+
+/* Two Column Banner Section */
+
+.two-column-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 50px 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.banner-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banner-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.two-column-banner h3 {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.two-column-banner p {
+    color: #E7E4D9;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* About Section */
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content h2 {
+    color: rgb(255, 184, 82);
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #E7E4D9;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-images {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-img {
+    flex: 1;
+    min-width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.contact-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content h2 {
+    color: rgb(255, 184, 82);
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    color: #E7E4D9;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.contact-img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 36px;
+    }
+    .banner p {
+        font-size: 20px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links {
+        gap: 15px;
+        margin-left: 20px;
+    }
+    section {
+        padding: 30px 20px;
+    }
+    .two-column-banner {
+        grid-template-columns: 1fr;
+    }
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-intro {
+    text-align: center;
+}
+
+.contact-intro p {
+    margin-bottom: 10px;
+}
+
+.contact-images {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-content a {
+    color: rgb(255, 184, 82);
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    color: rgb(215, 210, 203);
+    text-decoration: underline;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 999;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 30px;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    border-left: 3px solid rgb(255, 184, 82);
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: rgb(255, 184, 82);
+    font-size: 32px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.sidebar-close:hover {
+    color: #E7E4D9;
+}
+
+.sidebar h2 {
+    color: rgb(255, 184, 82);
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar-content {
+    margin-top: 30px;
+}
+
+.sidebar-content h3 {
+    color: #E7E4D9;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-content p {
+    color: #E7E4D9;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 300px;
+        right: -300px;
+    }
+}
+
+
+/* Einheitliche Inhaltsbreite für Seitenblöcke */
+
+.page-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+
+/* Leaflet Map */
+
+#map {
+    height: 330px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* KARUSSELL */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    /* passt gut in die Sidebar */
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: 220px;
+    /* feste Höhe = kein Springen */
+    flex-shrink: 0;
+    object-fit: contain;
+    /* KEIN Abschneiden mehr */
+    background-color: #000;
+    /* schwarze Balken statt Crop */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 184, 82);
+    border: none;
+    font-size: 26px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 184, 82, 0.8);
+    color: rgb(96, 17, 10);
+}
+
+
+/* =========================
+   HAMBURGER MENU
+   ========================= */
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: rgb(255, 184, 82);
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+        z-index: 998;
+    }
+    .nav-links a {
+        padding: 12px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .header-button {
+        display: none;
+    }
+}
